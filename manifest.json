@@ -1,0 +1,18 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Word Counter",
+    "description": "Count words without headache",
+    "developer_name": "Ayub Aswad",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.05
+    },
+    "preferences": [
+        {
+            "id": "countw_kw",
+            "type": "keyword",
+            "name": "Word Counter",
+            "default_value": "countw"
+        }
+    ]
+}
