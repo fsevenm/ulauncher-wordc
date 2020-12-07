@@ -1,6 +1,6 @@
 # Ulaucher Word Counter
 
-> a [ulauncher](https://ulauncher.io/) extension to count words, alpha-words, characters and sentences)
+> a [ulauncher](https://ulauncher.io/) extension to count words, alpha-words, characters and sentences.
 
 ## Screenshots
 TBD
