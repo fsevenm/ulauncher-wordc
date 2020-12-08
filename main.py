@@ -1,5 +1,6 @@
 import logging
 import string
+import re
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
 from ulauncher.api.shared.event import KeywordQueryEvent
@@ -28,10 +29,16 @@ class KeywordQueryEventListener(EventListener):
             rawstr = ""
 
         total_chars = str(len(rawstr))
-        total_words = str(sum(word.strip() for word in rawstr.split()))
+        total_words = str(len([word.strip() for word in rawstr.split()]))
         total_words_without_punctuation = str(sum(word.strip(string.punctuation).isalnum() for word in rawstr.split()))
         total_words_without_numeric = str(sum(word.strip(string.punctuation).isalpha() for word in rawstr.split()))
-        total_sentences = str(sum(word.strip() for word in rawstr.split(".")))
+
+        if len(rawstr) == 0:
+            total_sentences = 0
+        else:
+            total_sentences = len(re.split(r'[.!?]+', rawstr))
+
+        total_sentences = str(total_sentences)
 
         items.append(ExtensionResultItem(icon='images/icon.png',
                                          name=total_chars,
