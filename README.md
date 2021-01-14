@@ -3,7 +3,7 @@
 > a [ulauncher](https://ulauncher.io/) extension to count words, alpha-words, characters and sentences.
 
 ## Screenshots
-TBD
+![media1](preview.gif)
 
 ## Requirements
 
@@ -35,7 +35,7 @@ VERBOSE=1 ULAUNCHER_WS_API=ws://127.0.0.1:5054/ulauncher-wordc PYTHONPATH=/usr/l
 When you made any changes to `main.py` or the other assets, you need to re-run debugging scripts above.
 
 ## Todos
-- [ ] Add gif preview (or screenshot)
+- [x] Add gif preview (or screenshot)
 - [ ] Add ability to count paragraphs
 
 ## License 
