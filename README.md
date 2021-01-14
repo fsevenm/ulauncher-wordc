@@ -9,6 +9,7 @@
 
 * [ulauncher](https://ulauncher.io/)
 * Python >= 2.7
+* Regular expression, `pip install re`
 
 ## Install
 
